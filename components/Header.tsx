@@ -17,8 +17,14 @@ const PageHeader: FC<PageHeaderProps> = ({ defaultTab = 'home' }) => {
         <Menu.Item key="blog">
           <Link href="/blog">Blog</Link>
         </Menu.Item>
-        <Menu.Item key="about">
-          <Link href="/about">About</Link>
+        <Menu.Item key="projects">
+          <Link href="/projects">Projects</Link>
+        </Menu.Item>
+        <Menu.Item key="publications">
+          <Link href="/publications">Publications</Link>
+        </Menu.Item>
+        <Menu.Item key="materials">
+          <Link href="/materials">Course Materials</Link>
         </Menu.Item>
       </Menu>
     </Header>
