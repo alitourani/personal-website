@@ -1,20 +1,23 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
 import 'antd/dist/antd.css';
+import '../styles/globals.css'
+import Head from 'next/head';
+import { AppProps } from "next/app";
+import PageLayout from "$components/Layout";
 
-import { Button, Space, DatePicker, Card } from 'antd';
-import { CiCircleFilled } from '@ant-design/icons';
+const config = { title: 'PoI Dataset', favicon: './favicon.ico' }
 
-export default function Home() {
-  const onChange = () => {};
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div style={{ padding: 100 }}>
-      <Space direction="vertical">
-        <Button type="primary">Primary Button</Button>
-        <Button type="ghost">Ghost Button</Button>
-        <DatePicker onChange={onChange} />
-        <CiCircleFilled />
-      </Space>
-    </div>
+    <>
+      <Head>
+        <title>{config.title}</title>
+        <link rel="shortcut icon" href={config.favicon} />
+      </Head>
+      <PageLayout>
+        <Component {...pageProps} />  
+      </PageLayout>
+    </>
   );
-}
+};
+
+export default App;
