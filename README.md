@@ -1,2 +1,3 @@
-# personal-website
-My personal web-site based on Next.js
+# My Personal Website
+
+This repository contains my personal website based on Next.js.
