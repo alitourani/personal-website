@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import React, { FC } from "react";
 import { Layout, Menu } from 'antd';
-import Link from 'next/link'
 
 const { Header } = Layout;
 
