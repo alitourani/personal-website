@@ -1,9 +1,9 @@
-import { Row, Typography, Space, List } from 'antd';
 import { languageItems } from './personalData';
 import React, { CSSProperties, FC } from "react";
+import { Row, Typography, Avatar, List } from 'antd';
 import { TranslationOutlined } from '@ant-design/icons';
 
-const { Title, Link } = Typography;
+const { Title } = Typography;
 
 export const Languages: FC = () => {
     return <div style={ContainerStyle}>
@@ -19,7 +19,7 @@ export const Languages: FC = () => {
                     key={item.id}
                     title={item.name}
                     description={item.proficiency}
-                    avatar={<img src={item.icon} alt={item.name} />}
+                    avatar={<Avatar src={item.icon} />}
                 />
             )}
         />
