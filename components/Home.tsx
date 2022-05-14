@@ -1,4 +1,5 @@
 import { Row, Col } from 'antd';
+import { Honors } from './Home/Honors';
 import { Languages } from './Home/Languages';
 import { SidebarComponent } from './Sidebar';
 import React, { CSSProperties, FC } from "react";
@@ -9,6 +10,7 @@ export const HomeComponent: FC = () => {
       <Col span={18} style={ContainerStyle}>
         <Languages />
         <FieldsOfInterest />
+        <Honors />
       </Col>
       <Col span={6}>
         <SidebarComponent />
